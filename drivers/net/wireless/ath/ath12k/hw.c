@@ -926,6 +926,7 @@ static const struct ath12k_hw_params ath12k_hw_params[] = {
 		.supports_dynamic_smps_6ghz = true,
 
 		.supports_aspm = false,
+		.iova_mask = 0,
 	},
 	{
 		.name = "wcn7850 hw2.0",
@@ -1004,6 +1005,7 @@ static const struct ath12k_hw_params ath12k_hw_params[] = {
 		.supports_dynamic_smps_6ghz = false,
 
 		.supports_aspm = true,
+		.iova_mask = ATH12K_PCIE_MAX_PAYLOAD_SIZE - 1,
 	},
 	{
 		.name = "qcn9274 hw2.0",
@@ -1078,6 +1080,7 @@ static const struct ath12k_hw_params ath12k_hw_params[] = {
 		.supports_dynamic_smps_6ghz = true,
 
 		.supports_aspm = false,
+		.iova_mask = 0,
 	},
 };
 
